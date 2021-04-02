@@ -6,6 +6,7 @@ const Navigation = () => {
         <li className="navigation__item">Sklep</li>
         <li className="navigation__item">Koszyk</li>
       </ul>
+      <div className="navigation__logo"></div>
     </nav>
    );
 }

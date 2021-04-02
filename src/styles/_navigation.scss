@@ -4,7 +4,7 @@
   padding: 0 80px;
   position: fixed;
   display: flex;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   background-color: $bgcolor;
   overflow-x: hidden;
   &__list {
@@ -19,6 +19,14 @@
       font-weight: bold;
     }
   }
+  &__logo {
+    width: 50px;
+    margin: 10px 0 0 auto;
+    background-image: url("../images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
 }
 @media (max-width: 767px) {
   .navigation {
@@ -30,6 +38,9 @@
     }
     &__item {
       margin-left: 0;
+    }
+    &__logo {
+      display: none;
     }
   }
 }
