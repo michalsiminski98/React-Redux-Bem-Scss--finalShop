@@ -1,0 +1,35 @@
+.navigation {
+  width: 100vw;
+  height: 70px;
+  padding: 0 80px;
+  position: fixed;
+  display: flex;
+  font-size: 1.7rem;
+  background-color: $bgcolor;
+  overflow-x: hidden;
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  &__item {
+    margin-left: 80px;
+    cursor: pointer;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .navigation {
+    padding: 0;
+    font-size: 1.9rem;
+    &__list {
+      width: 100vw;
+      justify-content: space-around;
+    }
+    &__item {
+      margin-left: 0;
+    }
+  }
+}
