@@ -1,8 +1,8 @@
 const Page = () => {
   return ( 
-    <section>
-      Page
-    </section>
+    <header className="rain">
+      <img alt="header background" className="rain__img"></img>
+    </header>
    );
 }
  
