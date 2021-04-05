@@ -7,7 +7,7 @@ function rain () {
             image:this,
         })
         RainyDay.rain([
-            [5,2,2]
+            [5,2,3]
         ],0)
 }
 image.src = "../images/header.jpg";
