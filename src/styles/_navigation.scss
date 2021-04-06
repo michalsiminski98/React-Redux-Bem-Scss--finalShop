@@ -55,6 +55,7 @@
     align-items: center;
     justify-content: flex-end;
     padding-right: 80px;
+    z-index: 10001;
     &__list {
       display: none;
     }
@@ -64,7 +65,7 @@
     &__list-mobile {
       display: block;
       position: fixed;
-      transform: translateX(100%);
+      transform: translateX(-100%);
       left: 0;
       right: 0;
       top: 0;
