@@ -8,9 +8,9 @@ const Navigation = () => {
   const handleNavActive = () => {
     setNavActive(!isNavActive);
     if (isNavActive) {
-      TweenMax.to('.navigation__list-mobile', { duration: 2, x: (window.innerWidth) });
+      TweenMax.to('.navigation__list-mobile', { duration: 1.3, x: (window.innerWidth) });
     } else {
-      TweenMax.to('.navigation__list-mobile', { duration: 1.1, x: 0, ease: "bounce.out" });
+      TweenMax.to('.navigation__list-mobile', { duration: 1.6, x: 0, ease: "bounce.out" });
   }
   };
 
