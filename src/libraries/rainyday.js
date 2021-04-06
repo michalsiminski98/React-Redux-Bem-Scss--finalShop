@@ -1556,5 +1556,3 @@ function RainyDay (options) {
     audio.volume = 0.25
     audio.play()
   }
-
-  export default RainyDay;

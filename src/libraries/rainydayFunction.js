@@ -1,12 +1,12 @@
 import RainyDay from './rainyday'
-window.addEventListener('load', () =>{
+window.addEventListener('DOMContentLoaded', () =>{
 function rain () {
     const image = document.querySelector('.rain__img')
     image.onload = function(){
         const rainyDay = new RainyDay({
             image:this,
         })
-        RainyDay.rain([
+        rainyDay.rain([
             [5,2,3]
         ],0)
 }
