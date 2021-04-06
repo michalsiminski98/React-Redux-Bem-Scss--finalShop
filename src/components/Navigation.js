@@ -1,5 +1,6 @@
 import { TweenMax } from "gsap/all";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
 
@@ -17,15 +18,15 @@ const Navigation = () => {
   return ( 
     <>
     <ul className="navigation__list-mobile">
-        <li className="navigation__item-mobile">Strona główna</li>
-        <li className="navigation__item-mobile">Sklep</li>
-        <li className="navigation__item-mobile">Koszyk</li>
+        <li className="navigation__item-mobile"><NavLink to='/'>Strona główna</NavLink></li>
+        <li className="navigation__item-mobile"><NavLink to='/shop'>Sklep</NavLink></li>
+        <li className="navigation__item-mobile"><NavLink to='/cart'>Koszyk</NavLink></li>
     </ul>
     <nav className="navigation">
       <ul className="navigation__list">
-        <li className="navigation__item">Strona główna</li>
-        <li className="navigation__item">Sklep</li>
-        <li className="navigation__item">Koszyk</li>
+        <li className="navigation__item"><NavLink className="navigation__link" to='/'>Strona główna</NavLink></li>
+        <li className="navigation__item"><NavLink className="navigation__link" to='/shop'>Sklep</NavLink></li>
+        <li className="navigation__item"><NavLink className="navigation__link" to='/cart'>Koszyk</NavLink></li>
       </ul>
       <div className="navigation__logo"></div>
       <div
