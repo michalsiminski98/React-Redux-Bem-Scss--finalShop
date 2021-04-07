@@ -145,10 +145,40 @@
     }
     &-text {
       cursor: auto;
-      font-size: 2.2rem;
+      font-size: 2rem;
       &:hover {
         color: $blackColor;
       }
+    }
+  }
+  // form
+  &__formTitle {
+    margin: 40px 0 24px;
+    font-size: 2.3rem;
+  }
+  &__label {
+    font-size: 1.7rem;
+  }
+  &__input,
+  &__textArea {
+    padding: 4px 7px;
+    margin: 4px 0;
+  }
+  &__textArea {
+    min-width: 70%;
+    min-height: 250px;
+  }
+  &__submit {
+    margin-top: 8px;
+    width: 80px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid $mainColor;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      color: $whiteColor;
+      background-color: $mainColor;
     }
   }
 }

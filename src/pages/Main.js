@@ -72,12 +72,20 @@ const Main = () => {
       <h3 className="title contact__title">Contact</h3>
       <hr className="contact__hr"/>
       <div className="contact__socials">
+        <span className="contact__socialItem contact__socialItem-text">email: lorem@lorem.com</span>
         <span className="contact__socialItem fab fa-facebook-square"></span>
         <span className="contact__socialItem fab fa-instagram-square"></span>
-        <span className="contact__socialItem contact__socialItem-text">email: lorem@lorem.com</span>
-
       </div>
-      <div className="contact__form"></div>
+      <h4 className="contact__formTitle">Masz pytanie? Wyślij nam wiadomość</h4>
+      <form className="contact__form">
+        <label className="contact__label" for="email">email:</label><br/>
+        <input className="contact__input" type="email" id="email" name="email"/><br/>
+        <label className="contact__label" for="email">name:</label><br/>
+        <input className="contact__input" type="name" id="name" name="name"/><br/>
+        <label className="contact__label" for="email">wiadomość:</label><br/>
+        <textarea className="contact__textArea" name="message" id="message"></textarea><br/>
+        <button className="contact__submit" type="submit">Wyślij</button>
+      </form>
     </section>
     </>
    );
