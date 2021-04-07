@@ -1,0 +1,154 @@
+// header
+.rain {
+  text-align: center;
+  &__img {
+    width: 100vw;
+    height: auto;
+    max-height: 100vh;
+    min-height: 400px;
+  }
+  &__title {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6rem;
+    color: rgb(228, 228, 228);
+  }
+  &__button {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 40px;
+    font-size: 2rem;
+    border: 1px solid $mainColor;
+    color: $whiteColor;
+    background-color: transparent;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover {
+      background-color: $mainColor;
+    }
+  }
+}
+// aboutUs
+.aboutUs {
+  margin-top: 80px;
+  padding: 40px 0;
+  width: 70vw;
+  height: 390px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  &__photo {
+    flex-basis: 55%;
+    background-size: cover;
+    background-image: url("../images/team.jpg");
+  }
+  &__describe {
+    font-size: 45%;
+    text-align: center;
+  }
+  &__title {
+    position: relative;
+    font-size: 3rem;
+    color: $blackColor;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 28px;
+      top: 0;
+      left: 40%;
+      height: 28px;
+      background-color: $mainColor;
+      z-index: 1;
+      border-radius: 50%;
+    }
+  }
+  &__text {
+    margin-top: 24px;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
+  }
+}
+// swiper
+.photos {
+  padding: 40px 0;
+  background-color: rgb(238, 238, 238);
+  z-index: -2;
+  &__hr {
+    width: 55%;
+    margin: 40px 0 0 50%;
+    transform: translateX(-50%);
+  }
+}
+.swiper-container {
+  margin-top: 40px;
+  width: 100%;
+  padding: 40px 10%;
+  height: 440px;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+.title {
+  margin-top: 40px;
+  position: relative;
+  text-align: center;
+  font-size: 3rem;
+  color: $blackColor;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 28px;
+    top: 0;
+    left: 44%;
+    height: 28px;
+    background-color: $mainColor;
+    z-index: 10;
+    border-radius: 50%;
+  }
+}
+// contact
+.contact {
+  width: 80%;
+  padding: 40px 0 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  &__title {
+    padding: 0 0 24px;
+  }
+  &__hr {
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__socialItem {
+    margin-top: 16px;
+    font-size: 3.7rem;
+    cursor: pointer;
+    &:hover {
+      color: $mainColor;
+    }
+    &-text {
+      cursor: auto;
+      font-size: 2.2rem;
+      &:hover {
+        color: $blackColor;
+      }
+    }
+  }
+}

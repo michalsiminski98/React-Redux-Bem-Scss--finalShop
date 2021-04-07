@@ -6,6 +6,7 @@
   display: flex;
   font-size: 1.6rem;
   overflow-x: hidden;
+  z-index: 100;
   &__list {
     display: flex;
     align-items: center;
@@ -16,6 +17,7 @@
     cursor: pointer;
   }
   &__link {
+    color: $whiteColor;
     &:hover {
       font-weight: bold;
     }
