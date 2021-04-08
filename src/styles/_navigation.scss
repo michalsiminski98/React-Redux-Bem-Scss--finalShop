@@ -6,6 +6,7 @@
   display: flex;
   font-size: 1.6rem;
   overflow-x: hidden;
+  background-color: rgba(240, 240, 240, 0.55);
   z-index: 100;
   &__list {
     display: flex;
@@ -17,6 +18,7 @@
     cursor: pointer;
   }
   &__link {
+    color: $blackColor;
     &:hover {
       font-weight: bold;
     }

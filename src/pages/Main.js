@@ -2,8 +2,18 @@ import header from '../images/header.jpg';
 import tentPremium from '../images/tentPremium.jpg';
 import tentNormal from '../images/tentNormal.jpg';
 import tentSimple from '../images/tentSimple.jpg';
+import { useForm } from 'react-hook-form';
 
 const Main = () => {
+
+  const { register, handleSubmit, formState: {errors} } = useForm();
+
+  const onSubmit = (data, e) =>{
+    console.log(data);
+    alert("Wiadomość wysłana :-)");
+    e.target.reset();
+  }
+
   return ( 
     <>
     <header className="rain">
@@ -77,14 +87,33 @@ const Main = () => {
         <span className="contact__socialItem fab fa-instagram-square"></span>
       </div>
       <h4 className="contact__formTitle">Masz pytanie? Wyślij nam wiadomość</h4>
-      <form className="contact__form">
-        <label className="contact__label" for="email">email:</label><br/>
-        <input className="contact__input" type="email" id="email" name="email"/><br/>
-        <label className="contact__label" for="email">name:</label><br/>
-        <input className="contact__input" type="name" id="name" name="name"/><br/>
-        <label className="contact__label" for="email">wiadomość:</label><br/>
-        <textarea className="contact__textArea" name="message" id="message"></textarea><br/>
-        <button className="contact__submit" type="submit">Wyślij</button>
+      <form className="contact__form" onSubmit={handleSubmit(onSubmit)}>
+        <label className="contact__label" htmlFor="email">email:</label><br/>
+        <input
+        className="contact__input"
+        type="email"
+        name="email"
+        {...register("Email", { required: true, minLength: 3, maxLength: 50 })}
+        />
+         {errors.Email && (<p>email is required</p>)}
+        <br/>
+        <label className="contact__label" htmlFor="email">name:</label><br/>
+        <input
+        className="contact__input"
+        type="name"
+        name="name"
+        {...register("Name", { required: true, minLength:{value: 2, message:"Your name should have at least 2 and max 20 signs"}, maxLength:{value: 20, message:"Your name should have at least 2 and max 20 signs" }})}
+        />
+         {errors.Name && <p>{errors.Name.message}</p>}
+        <br/>
+        <label className="contact__label" htmlFor="email">wiadomość:</label><br/>
+        <textarea
+        className="contact__textArea"
+        name="message"
+        {...register("Message", { required: true, minLength: 20, maxLength: 300 })}
+        >
+          </textarea><br/>
+        <input className="contact__submit" type="submit" value="Wyślij"/>
       </form>
     </section>
     </>
