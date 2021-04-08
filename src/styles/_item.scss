@@ -1,0 +1,40 @@
+.item {
+  min-height: 100vh;
+  padding-top: 200px;
+  width: 77%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  &__title {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    max-height: 35px;
+  }
+  &__img {
+    width: 55%;
+  }
+  &__describes {
+    margin-left: 24px;
+    font-size: 1.7rem;
+  }
+  &__describe {
+    margin: 8px 0;
+    &-grey {
+      font-size: 1.5rem;
+      color: rgb(83, 83, 83);
+    }
+  }
+  &__add {
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid $mainColor;
+    cursor: pointer;
+    &:hover {
+      background-color: $mainColor;
+      color: $whiteColor;
+    }
+  }
+}

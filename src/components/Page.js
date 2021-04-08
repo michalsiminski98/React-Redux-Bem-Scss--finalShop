@@ -11,10 +11,10 @@ const Page = () => {
       <Route exact path='/'>
         <Main/>
       </Route>
-      <Route path='/shop'>
+      <Route exact path='/shop'>
         <Shop/>
       </Route>
-      <Route path='/shop:id'>
+      <Route path='/shop/:id'>
         <Item/>
       </Route>
       <Route path='/cart'>
