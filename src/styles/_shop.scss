@@ -1,3 +1,38 @@
 .shop {
+  padding-top: 120px;
   min-height: 100vh;
+  &__tents {
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__title {
+    text-align: center;
+    margin: 24px 0;
+    flex-basis: 100%;
+    font-size: 2.2rem;
+  }
+  &__item {
+    flex-basis: 30%;
+    margin: 24px 16px;
+    background-color: rgb(248, 248, 248);
+    cursor: pointer;
+    &:hover {
+      opacity: 0.84;
+    }
+  }
+  &__itemPhoto {
+    width: 100%;
+  }
+  &__namesWrapper {
+    text-align: center;
+    padding: 16px 0;
+    font-size: 1.7rem;
+  }
+  &__itemName {
+    margin-bottom: 8px;
+  }
 }
