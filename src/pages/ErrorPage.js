@@ -1,8 +1,8 @@
 const ErrorPage = () => {
   return ( 
-    <div>
-      ErrorPage
-    </div>
+    <section className="errorPage">
+      <span>Przepraszamy, podana strona nie istnieje</span>
+    </section>
    );
 }
  
