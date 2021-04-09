@@ -38,3 +38,24 @@
     }
   }
 }
+@media (max-width: 1024px) {
+  .item {
+    width: 90%;
+    &__img {
+      width: 65%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .item {
+    &__img {
+      width: 100%;
+    }
+    &__describes {
+      margin-left: 0;
+      font-size: 1.9rem;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
