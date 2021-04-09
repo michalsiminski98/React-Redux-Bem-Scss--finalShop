@@ -36,3 +36,38 @@
     margin-bottom: 8px;
   }
 }
+@media (max-width: 1440px) {
+  .shop {
+    padding-top: 90px;
+    &__tents {
+      width: 90%;
+    }
+    &__item {
+      flex-basis: 30%;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .shop {
+    &__tents {
+      width: 100%;
+    }
+    &__item {
+      flex-basis: 27%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .shop {
+    &__item {
+      flex-basis: 40%;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .shop {
+    &__item {
+      flex-basis: 75%;
+    }
+  }
+}
