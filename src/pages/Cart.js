@@ -9,6 +9,8 @@ const Cart = () => {
           <div className="cart__namesWrapper">
           <p className="cart__itemName">Duap dupa</p>
           <p className="cart__itemPrice">dupa: $123</p>
+          <input type="number" name="quantity" min="1" max="10"/>
+          <button>Usuń</button>
           </div>
         </div>
       </div>

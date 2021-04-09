@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './libraries/rainydayFunction';
-import './libraries/swiper';
 import './js/navShow';
 import 'swiper/swiper-bundle.css';
 import './css/index.min.css';

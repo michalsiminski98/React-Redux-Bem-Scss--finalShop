@@ -3,8 +3,25 @@ import tentPremium from '../images/tentPremium.jpg';
 import tentNormal from '../images/tentNormal.jpg';
 import tentSimple from '../images/tentSimple.jpg';
 import { useForm } from 'react-hook-form';
+import { Swiper } from 'swiper';
+import { useEffect } from 'react';
 
 const Main = () => {
+
+  
+useEffect(() => {
+  let x;
+  window.innerWidth <= 1040 ? x=1 : x=2;
+
+new Swiper('.swiper-container', {
+  slidesPerView: x,
+  zoom: false,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+}, [])
 
   const { register, handleSubmit, formState: {errors} } = useForm();
 
