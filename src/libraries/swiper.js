@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 
 window.addEventListener('DOMContentLoaded', () =>{
-var swiper = new Swiper('.swiper-container', {
+new Swiper('.swiper-container', {
   slidesPerView: 2,
   zoom: false,
   navigation: {
