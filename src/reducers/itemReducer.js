@@ -1,8 +1,8 @@
 import * as ActionTypes from "../actions/itemTypes";
 
 const INITIAL_STATES = {
-  products: [{id:1, name: "Tent Premium V-28", price: 30, img: "https://static.zajo.net/content/mediagallery/zajo_dcat/image/product/types/X/9736.png", describe: "piekny namiocik, dupny"}],
-  cart:[],
+  products: [{id:1, name: "Premium V-28", price: 30, img: "https://static.zajo.net/content/mediagallery/zajo_dcat/image/product/types/X/9736.png", describe: "piekny namiocik, dupny"}],
+  cart:[{id:1, name: "Premium V-28", price: 30, img: "https://static.zajo.net/content/mediagallery/zajo_dcat/image/product/types/X/9736.png", describe: "piekny namiocik, dupny", qty: 2}],
   currentItem: null,
 }
 

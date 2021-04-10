@@ -14,8 +14,8 @@ const Page = () => {
       <Route exact path='/shop'>
         <Shop/>
       </Route>
-      <Route path='/shop/:id'>
-        <Item/>
+      {/* this have to be in "component=..." if we want to use props.location, etc. */}
+      <Route path='/shop/:id' component={Item}>
       </Route>
       <Route path='/cart'>
         <Cart/>
