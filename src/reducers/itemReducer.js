@@ -1,7 +1,12 @@
 import * as ActionTypes from "../actions/itemTypes";
 
 const INITIAL_STATES = {
-  products: [{id:1, name: "Premium V-28", price: 30, img: "https://static.zajo.net/content/mediagallery/zajo_dcat/image/product/types/X/9736.png", describe: "piekny namiocik, dupny"}],
+  products: [{id:1, name: "Premium V-28", price: 55, img: "https://static.zajo.net/content/mediagallery/zajo_dcat/image/product/types/X/9736.png", describe: "piekny namiocik, dupny"},
+  {id:21, name: "Premium B-23", price: 60, img: "https://static.zajo.net/content/mediagallery/zajo_dcat/image/product/types/X/7555.png", describe: "piekny namiocik, dupny"},
+  {id:3, name: "Premium VS-2", price: 120, img: "https://rayo4x4.pl/eng_pl_AUTOHOME-ROOF-TENT-AIRTOP-CARBON-3079_11.png", describe: "piekny namiocik, dupny"},
+  {id:4, name: "Colorado Baby", price: 30, img: "https://www.checkers.co.za/medias/10122075EA-checkers515Wx515H?context=bWFzdGVyfGltYWdlc3wxODI3MzN8aW1hZ2UvcG5nfGltYWdlcy9oY2IvaDhkLzg4ODEyMTkzMzgyNzAucG5nfGZkNmFjNjYxOGQwOGMxMjdjY2Q0ODdjZDQzMWM0YWQyYmIxMTA5OGY1ZDFmMDk4MjM5MjQzZDk1MTk1Yzc2MDg", describe: "piekny namiocik, dupny"},
+  {id:5, name: "Normal-222", price: 44, img: "https://static.zajo.net/content/mediagallery/zajo_dcat/image/product/types/X/9698.png", describe: "piekny namiocik, dupny"},
+  {id:6, name: "Lite-1", price: 10, img: "https://elliscanvastents.com/wp-content/uploads/2019/06/shackleton-front_e41d64d7-021a-4dd6-b754-50d9867ac473_1024x1024.png", describe: "piekny namiocik, dupny"}],
   cart:[],
   currentItem: null,
 }
