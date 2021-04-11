@@ -6,6 +6,7 @@ const Navigation = () => {
 
   const [isNavActive, setNavActive] = useState(false);
 
+  // gsap nav for mobile
   const handleNavActive = () => {
     setNavActive(!isNavActive);
     if (isNavActive) {

@@ -37,10 +37,8 @@ const Cart = ({products}) => {
    );
 }
 
-const mapStateToProps = state => {
-  return{
+const mapStateToProps = state => ({
     products: state.shop.cart,
-  }
-}
+  })
  
 export default connect(mapStateToProps)(Cart);

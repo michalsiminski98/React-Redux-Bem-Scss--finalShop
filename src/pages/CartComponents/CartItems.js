@@ -24,12 +24,10 @@ const CartItems = ({products, removeFromCart, adjustQty}) => {
    );
 }
 
-const mapDispatchToProps = dispatch => {
-  return{
+const mapDispatchToProps = dispatch => ({
     removeFromCart: id => dispatch(removeFromCart(id)),
     adjustQty: (id, value) => dispatch(adjustQty(id, value)),
-  }
-}
+  })
  
  
 export default connect(null, mapDispatchToProps)(CartItems);

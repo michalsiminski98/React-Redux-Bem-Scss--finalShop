@@ -5,14 +5,14 @@ import tentSimple from '../images/tentSimple.jpg';
 import { useForm } from 'react-hook-form';
 import { Swiper } from 'swiper';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Main = () => {
 
-  
+// swiper from "fan photos" has to be in useEffect otherwise it'll bugging while going to another URL 
 useEffect(() => {
   let x;
   window.innerWidth <= 1040 ? x=1 : x=2;
-
 new Swiper('.swiper-container', {
   slidesPerView: x,
   zoom: false,
@@ -23,6 +23,7 @@ new Swiper('.swiper-container', {
 });
 }, [])
 
+  // react-hook-form for form
   const { register, handleSubmit, formState: {errors} } = useForm();
 
   const onSubmit = (data, e) =>{
@@ -37,7 +38,11 @@ new Swiper('.swiper-container', {
       <img alt="header background" className="rain__img" src={header}>
       </img>
       <h1 className="rain__title">Zobacz nasz najnowszy produkt!</h1>
-      <button className="rain__button">Zobacz</button>
+      <Link
+      to="shop"
+      >
+        <button className="rain__button">Zobacz</button>
+      </Link>
     </header>
     <section className="aboutUs">
       <div className="aboutUs__photo"></div>
