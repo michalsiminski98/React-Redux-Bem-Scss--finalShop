@@ -1,15 +1,15 @@
 .cart {
-  padding: 120px 80px;
   min-height: 100vh;
+  padding: 120px 80px;
   display: flex;
   &__items {
     flex-basis: 60%;
   }
   &__item {
     width: 100%;
+    height: 340px;
     padding: 24px;
     margin: 8px 0;
-    height: 340px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid $mainColor;
@@ -21,34 +21,34 @@
     margin-left: 24px;
   }
   &__itemName {
-    font-size: 2rem;
     margin: 8px 0;
+    font-size: 2rem;
   }
   &__itemPrice {
     font-size: 1.8rem;
   }
   &__delete {
-    font-size: 2rem;
-    margin: 8px 0 0 16px;
     padding: 6px;
-    color: rgb(197, 12, 12);
+    margin: 8px 0 0 16px;
+    font-size: 2rem;
     border: 2px solid rgb(197, 12, 12);
     border-radius: 50%;
+    color: rgb(197, 12, 12);
     cursor: pointer;
     transition: 0.3s;
     &:hover {
+      transform: rotate(-360deg);
       border-color: transparent;
       background-color: rgb(197, 12, 12);
       color: $whiteColor;
-      transform: rotate(-360deg);
     }
   }
   // summary
   &__sumPlace {
     flex-basis: 40%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
   &__sum {
     width: 70%;
@@ -66,18 +66,18 @@
     font-size: 1.5rem;
   }
   &__buyButton {
-    margin: 40px 0 0 50%;
-    transform: translateX(-50%);
     width: 70px;
     height: 35px;
+    margin: 40px 0 0 50%;
+    transform: translateX(-50%);
     font-size: 1.4rem;
     border: 1px solid $mainColor;
     background-color: transparent;
     cursor: pointer;
     transition: 0.2s;
     &:hover {
-      background-color: $mainColor;
       color: $whiteColor;
+      background-color: $mainColor;
     }
   }
 }
@@ -93,9 +93,9 @@
     padding: 100px 40px;
     &__item {
       width: 100%;
+      height: 340px;
       padding: 24px;
       margin: 8px 0;
-      height: 340px;
       display: flex;
       align-items: center;
       border-bottom: 1px solid $mainColor;
@@ -112,9 +112,9 @@
       flex-basis: 100%;
     }
     &__item {
-      justify-content: center;
       padding: 0;
       margin: 24px auto;
+      justify-content: center;
       flex-wrap: wrap;
     }
     &__itemPhoto {
@@ -122,9 +122,9 @@
       max-height: 70%;
     }
     &__namesWrapper {
+      flex-basis: 100%;
       margin: 0;
       text-align: center;
-      flex-basis: 100%;
     }
     &__sumPlace {
       flex-basis: 100%;

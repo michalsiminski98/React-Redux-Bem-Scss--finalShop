@@ -1,12 +1,12 @@
 .footer {
-  margin-top: 160px;
   width: 100vw;
   height: 70px;
   padding-right: 80px;
+  margin-top: 160px;
   background-color: $bgColor;
   text-align: right;
   &__name {
-    font-size: 1.5rem;
     line-height: 70px;
+    font-size: 1.5rem;
   }
 }

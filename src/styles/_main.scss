@@ -16,12 +16,12 @@
     color: rgb(228, 228, 228);
   }
   &__button {
+    width: 100px;
+    height: 40px;
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
-    height: 40px;
     font-size: 2rem;
     border: 1px solid $mainColor;
     color: $whiteColor;
@@ -35,10 +35,10 @@
 }
 // aboutUs
 .aboutUs {
-  margin-top: 80px;
-  padding: 40px 0;
   width: 70vw;
   height: 390px;
+  padding: 40px 0;
+  margin-top: 80px;
   margin-left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -56,21 +56,21 @@
     font-size: 3rem;
     color: $blackColor;
     &::after {
-      content: "";
       display: block;
-      position: absolute;
       width: 28px;
+      height: 28px;
+      position: absolute;
       top: 0;
       left: 40%;
-      height: 28px;
+      content: "";
       background-color: $mainColor;
       z-index: 1;
       border-radius: 50%;
     }
   }
   &__text {
-    margin-top: 24px;
     width: 80%;
+    margin-top: 24px;
     margin-left: 50%;
     transform: translateX(-50%);
     font-size: 1.6rem;
@@ -88,10 +88,10 @@
   }
 }
 .swiper-container {
-  margin-top: 40px;
   width: 100%;
-  padding: 40px 10%;
   height: 440px;
+  padding: 40px 10%;
+  margin-top: 40px;
 }
 
 .swiper-slide {
@@ -104,16 +104,16 @@
   font-size: 3rem;
   color: $blackColor;
   &::after {
-    content: "";
     display: block;
-    position: absolute;
     width: 28px;
+    height: 28px;
+    position: absolute;
     top: 0;
     left: 44%;
-    height: 28px;
+    content: "";
     background-color: $mainColor;
-    z-index: 10;
     border-radius: 50%;
+    z-index: 10;
   }
 }
 // contact
@@ -144,8 +144,8 @@
       color: $mainColor;
     }
     &-text {
-      cursor: auto;
       font-size: 2rem;
+      cursor: auto;
       &:hover {
         color: $blackColor;
       }
@@ -170,9 +170,9 @@
     min-height: 250px;
   }
   &__submit {
-    margin-top: 8px;
     width: 80px;
     height: 35px;
+    margin-top: 8px;
     background-color: transparent;
     border: 1px solid $mainColor;
     cursor: pointer;
@@ -241,8 +241,8 @@
   // aboutUs
   .aboutUs {
     width: 90vw;
-    flex-wrap: wrap;
     min-height: 700px;
+    flex-wrap: wrap;
     &__photo {
       flex-basis: 100%;
       height: 400px;
@@ -280,8 +280,8 @@
   }
   .swiper-container {
     width: 100%;
-    padding: 40px 10%;
     height: 290px;
+    padding: 40px 10%;
   }
 }
 @media (max-width: 414px) {
