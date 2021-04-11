@@ -27,6 +27,22 @@
   &__itemPrice {
     font-size: 1.8rem;
   }
+  &__delete {
+    font-size: 2rem;
+    margin: 8px 0 0 16px;
+    padding: 6px;
+    color: rgb(197, 12, 12);
+    border: 2px solid rgb(197, 12, 12);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      border-color: transparent;
+      background-color: rgb(197, 12, 12);
+      color: $whiteColor;
+      transform: rotate(-360deg);
+    }
+  }
   // summary
   &__sumPlace {
     flex-basis: 40%;

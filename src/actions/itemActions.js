@@ -6,13 +6,13 @@ export const addToCart = itemID => ({
     id: itemID,
   }
 })
-export const RemoveFromCart = itemID => ({
+export const removeFromCart = itemID => ({
   type:ActionType.REMOVE,
   payload:{
     id: itemID,
   }
 })
-export const AdjustQty = (itemID, value) => ({
+export const adjustQty = (itemID, value) => ({
   type:ActionType.ADJUST_QTY,
   payload:{
     id: itemID,

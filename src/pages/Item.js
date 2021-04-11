@@ -1,5 +1,9 @@
+import { connect } from "react-redux";
+import { addToCart } from "../actions/itemActions";
+
 const Item = (props) => {
 
+  // getting data of current item from shop.js
   const prod = props.location.state.productData.prod;
 
   return ( 
@@ -9,10 +13,15 @@ const Item = (props) => {
       <div className="item__describes">
         <p className="item__describe">Cena: ${prod.price}</p>
         <p className="item__describe item__describe-grey">Opis: {prod.describe}</p>
-        <button className="item__add">Dodaj</button>
+        <button onClick={() => props.addToCart(prod.id)} className="item__add">Dodaj</button>
       </div>
     </section>
    );
 }
+
+// add product to cart
+const mapDispatchToProps = dispatch => ({
+  addToCart: id => dispatch(addToCart(id)),
+})
  
-export default Item;
+export default connect(null, mapDispatchToProps)(Item);

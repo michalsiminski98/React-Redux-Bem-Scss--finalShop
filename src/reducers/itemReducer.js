@@ -2,7 +2,7 @@ import * as ActionTypes from "../actions/itemTypes";
 
 const INITIAL_STATES = {
   products: [{id:1, name: "Premium V-28", price: 30, img: "https://static.zajo.net/content/mediagallery/zajo_dcat/image/product/types/X/9736.png", describe: "piekny namiocik, dupny"}],
-  cart:[{id:1, name: "Premium V-28", price: 30, img: "https://static.zajo.net/content/mediagallery/zajo_dcat/image/product/types/X/9736.png", describe: "piekny namiocik, dupny", qty: 2}],
+  cart:[],
   currentItem: null,
 }
 
@@ -24,7 +24,7 @@ const itemReducer = (state=INITIAL_STATES, action) => {
     case ActionTypes.REMOVE:
       return{
         ...state,
-        cart: state.cart.map(item => item.id !== action.payload.id)
+        cart: state.cart.filter(item => item.id !== action.payload.id)
       }
     case ActionTypes.ADJUST_QTY:
       return{
