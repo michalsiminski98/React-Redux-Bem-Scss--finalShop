@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { connect } from 'react-redux';
 import CartItems from './CartComponents/CartItems';
   
@@ -9,6 +8,8 @@ const Cart = ({products}) => {
   let priceSummary = 0;
   const totalItemsSummary = products.map(item => {
       itemsSummary += item.qty;
+      if(isNaN(itemsSummary)) itemsSummary = 0; 
+      return(itemsSummary)
   });
 
   const totalPriceSummary = products.map(item => {
